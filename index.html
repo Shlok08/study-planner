@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@formkit/auto-animate@1.0.0-beta.6/auto-animate.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Study Planner</h1>
+
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Task Title (e.g., Read Chapter 5)" required>
+            <input type="text" id="task-subject" placeholder="Subject (e.g., Physics)" required>
+            <input type="date" id="task-due-date" required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <h2>Upcoming Tasks</h2>
+        <ul id="task-list" data-auto-animate></ul>
+    </div>
+
+    
+<script src="
+https://cdn.jsdelivr.net/npm/date-fns@4.1.0/cdn.min.js
+"></script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
